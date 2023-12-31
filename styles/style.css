@@ -1,0 +1,49 @@
+:root {
+    --text-color: #111517;
+    --background-color: #FAFAFA;
+    --background-color2: #FFF;
+}
+
+[data-dark-mode] {
+    --background-color: #202C36;
+    --background-color2: #2B3844;
+    --text-color: #FFF;
+}
+
+@media (prefers-color-scheme: dark) {
+     :root {
+        --background-color: #202C36;
+        --background-color2: #2B3844;
+    }
+    .dark-mode {
+        display: none;
+    }
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.box-shadow {
+    box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+}
+
+.box-shadow2 {
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.03);
+}
+
+.box-shadow3 {
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.10);
+}
+
+.color1 {
+    /* background-color: #FAFAFA; */
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.color2 {
+    background-color: var(--background-color2);
+    color: var(--text-color);
+}
